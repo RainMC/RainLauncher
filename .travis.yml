@@ -1,0 +1,15 @@
+language: java
+
+sudo: false
+
+install:
+script: gradle bootrun
+
+jdk:
+  - oraclejdk8
+
+os:
+  - linux
+
+notifications:
+
