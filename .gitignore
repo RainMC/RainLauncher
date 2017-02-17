@@ -1,0 +1,36 @@
+# Mac OSX
+*.DS_Store
+.localized
+
+# Gradle
+.gradle
+build/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*.log
+logs
+
+# IDEA
+.idea/
+*.iml
+classes/
+src/main/webapp/
+*.ipr
+*.iws
+/out/
+.idea_modules/
+
+# Eclipse
+.project
+.metadata
+.classpath
+.settings/
+*.launch
+.externalToolBuilders/
+lib/lombok.jar
+
+# JMeter
+*.jtl
