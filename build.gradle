@@ -1,0 +1,9 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+
+apply plugin: 'findbugs'
+apply plugin: 'war'
+
+bootRun {
+
+}
