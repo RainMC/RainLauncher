@@ -17,7 +17,6 @@ logs
 .idea/
 *.iml
 classes/
-src/main/webapp/
 *.ipr
 *.iws
 /out/
