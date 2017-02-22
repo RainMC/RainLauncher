@@ -33,3 +33,4 @@ lib/lombok.jar
 
 # JMeter
 *.jtl
+src/main/webapp/
