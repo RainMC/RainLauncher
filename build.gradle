@@ -16,11 +16,11 @@ task compileTest(dependsOn: compile) {
     }
 }
 
-task test(dependsOn: [compile, compileTest]) {
-    doLast {
-        println 'running unit tests'
-    }
-}
+//task test(dependsOn: [compile, compileTest]) {
+//    doLast {
+//        println 'running unit tests'
+//    }
+//}
 
 task dist(dependsOn: [compile, test]) {
     doLast {
