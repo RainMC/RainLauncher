@@ -3,7 +3,9 @@ package com.rainmc.RainLauncher;
 import com.jfoenix.controls.JFXDecorator;
 import com.jfoenix.svg.SVGGlyphLoader;
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.*;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class App extends Application {
@@ -12,17 +14,14 @@ public class App extends Application {
     }
 
     @Override
-    public void start(Stage stage) throws Exception {
-        Group root = new Group();
-        Scene scene = new Scene(root);
-
-        //		stage.initStyle(StageStyle.UNDECORATED);
-        //		stage.setFullScreen(true);
-        stage.setMinWidth(800);
-        stage.setMinHeight(600);
-        stage.setScene(scene);
-        stage.show();
+    public void start(Stage primaryStage) throws Exception {
+        BorderPane root = (BorderPane) FXMLLoader.load(getClass().getClassLoader().getResource("resources/view/MainPane.fxml"));
+        Scene scene = new Scene(root, 800, 600);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Hello World");
+        primaryStage.show();
+        primaryStage.setScene(scene);
+        primaryStage.show();
         System.out.println("[APP] Application startup...");
     }
-
 }
