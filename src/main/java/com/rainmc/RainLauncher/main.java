@@ -1,4 +1,4 @@
-package com.rainmc;
+package com.rainmc.RainLauncher;
 
 public class main {
 
