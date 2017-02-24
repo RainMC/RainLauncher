@@ -29,8 +29,6 @@ classes/
 .settings/
 *.launch
 .externalToolBuilders/
-lib/lombok.jar
 
 # JMeter
 *.jtl
-src/main/webapp/

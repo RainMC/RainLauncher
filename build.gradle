@@ -1,8 +1,32 @@
+apply plugin: 'base'
 apply plugin: 'idea'
 apply plugin: 'java'
-
+apply plugin: 'application'
 apply plugin: 'findbugs'
-apply plugin: 'war'
+
+version = appVersion
+
+mainClassName = 'com.rainmc.RainLauncher.App'
+repositories {
+    mavenCentral()
+//    maven {
+//        url mavenRepository
+//    }
+}
+dependencies {
+    compile 'com.jfoenix:jfoenix:1.0.0'
+}
+sourceCompatibility = jdkVersion
+targetCompatibility = jdkVersion
+
+
+jar {
+    baseName = 'RainLauncher'
+    version = appVersion
+    manifest {
+        attributes 'Main-Class': 'com.rainmc.RainLauncher.App'
+    }
+}
 
 task compile {
     doLast {
@@ -26,4 +50,8 @@ task dist(dependsOn: [compile, test]) {
     doLast {
         println 'building the distribution'
     }
+}
+
+task wrapper(type: Wrapper, description: 'Creates and deploys the Gradle wrapper to the current directory.') {
+    gradleVersion = '2.14.1'
 }
