@@ -7,14 +7,23 @@ apply plugin: 'findbugs'
 version = appVersion
 
 mainClassName = 'com.rainmc.RainLauncher.App'
+
+
 repositories {
+//        mavenLocal()
     mavenCentral()
 //    maven {
 //        url mavenRepository
 //    }
 }
+
 dependencies {
     compile 'com.jfoenix:jfoenix:1.0.0'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
 }
 sourceCompatibility = jdkVersion
 targetCompatibility = jdkVersion
@@ -28,17 +37,17 @@ jar {
     }
 }
 
-task compile {
-    doLast {
-        println 'compiling source'
-    }
-}
-
-task compileTest(dependsOn: compile) {
-    doLast {
-        println 'compiling unit tests'
-    }
-}
+//task compile {
+//    doLast {
+//        println 'compiling source'
+//    }
+//}
+//
+//task compileTest(dependsOn: compile) {
+//    doLast {
+//        println 'compiling unit tests'
+//    }
+//}
 
 //task test(dependsOn: [compile, compileTest]) {
 //    doLast {
@@ -46,11 +55,11 @@ task compileTest(dependsOn: compile) {
 //    }
 //}
 
-task dist(dependsOn: [compile, test]) {
-    doLast {
-        println 'building the distribution'
-    }
-}
+//task dist(dependsOn: [compile, test]) {
+//    doLast {
+//        println 'building the distribution'
+//    }
+//}
 
 task wrapper(type: Wrapper, description: 'Creates and deploys the Gradle wrapper to the current directory.') {
     gradleVersion = '2.14.1'
