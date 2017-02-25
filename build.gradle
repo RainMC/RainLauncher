@@ -11,11 +11,10 @@ mainClassName = 'com.rainmc.RainLauncher.App'
 
 
 repositories {
-//        mavenLocal()
+    mavenLocal()
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'http://maven.oschina.net/content/groups/public/' }
     mavenCentral()
-//    maven {
-//        url mavenRepository
-//    }
 }
 
 dependencies {
