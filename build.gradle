@@ -30,9 +30,12 @@ targetCompatibility = jdkVersion
 
 sourceSets {
     main {
-        resources {
+        java {
             srcDirs = ['src/main/java']
-            includes = ['src/main/resources']
+        }
+        resources {
+//            srcDirs = ['src/main/java']
+            srcDirs = ['src/main/resources']
         }
     }
 }
