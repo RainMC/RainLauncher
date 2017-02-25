@@ -8,5 +8,8 @@ os:
 branches:
   only:
   - master
-notifications:
+before_install:
+ - chmod +x gradlew
 script: "bash ./gradlew clean build --stacktrace"
+notifications:
+
