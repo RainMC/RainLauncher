@@ -19,7 +19,9 @@ public class App extends Application {
 //        System.out.println(getClass().getResource("."));
         primaryStage.initStyle(StageStyle.UNDECORATED); // Remove window decoration
         BorderPane root = (BorderPane) FXMLLoader.load(getClass().getResource("view/MainPane.fxml"));
-        primaryStage.setScene(new Scene(root, 800, 600));
+        Scene scene = new Scene(root, 800, 600);
+        scene.getStylesheets().add(getClass().getResource("view/MainPane.fxml").toString());
+        primaryStage.setScene(scene);
         primaryStage.show();
         System.out.println("[APP] Application startup...");
     }

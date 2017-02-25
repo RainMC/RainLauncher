@@ -1,19 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-  <?import javafx.scene.control.Button?>
-  <?import javafx.scene.control.CheckBox?>
-  <?import javafx.scene.control.ChoiceBox?>
-  <?import javafx.scene.layout.BorderPane?>
-  <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
-<center>
-  <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-    <children>
-      <Button layoutX="175.0" layoutY="163.0" mnemonicParsing="false" text="Button" />
-      <CheckBox layoutX="275.0" layoutY="167.0" mnemonicParsing="false" text="CheckBox" />
-      <ChoiceBox layoutX="387.0" layoutY="163.0" prefWidth="150.0" />
-    </children>
-  </Pane>
-</center>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+  <center>
+    <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <children>
+        <Button id="play" layoutX="318.0" layoutY="475.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="164.0" text="PLAY">
+               <font>
+                  <Font size="27.0" />
+               </font></Button>
+        <ChoiceBox layoutX="559.0" layoutY="494.0" prefHeight="31.0" prefWidth="150.0" />
+            <ImageView fitHeight="107.0" fitWidth="112.0" layoutX="155.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/face.png" />
+               </image>
+            </ImageView>
+      </children>
+    </Pane>
+  </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
 </BorderPane>
