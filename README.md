@@ -3,6 +3,7 @@
 
 ## 关于
 An open-source cross-platform Minecraft launcher made by JavaFX
+
 You can find the Pro edition [here]().
 
 ## 开发工具
