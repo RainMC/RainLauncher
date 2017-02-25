@@ -1,28 +1,27 @@
 # RainLauncher Slim Edition
 [![Build Status](https://travis-ci.org/RainMC/RainLauncher.svg?branch=master)](https://travis-ci.org/RainMC/RainLauncher)
 
-## 关于
+## ABOUT
 An open-source cross-platform Minecraft launcher made by JavaFX
 You can find the Pro edition [here]().
 
-## 开发工具
+## DEVELOPING TOOLS
 
 - [Gradle](http://gradle.org/)
 - [JetBrains Intelli IDEA](https://www.jetbrains.com/idea/)
-- [ScenceBuilder](http://gluonhq.com/labs/scene-builder/)
+- [SceneBuilder](http://gluonhq.com/labs/scene-builder/)
 
-## 下载
+## DOWNLOAD
 
-## 编码规范
-
+## CODING SPECIFICATION
 - [EditorConfig](http://editorconfig.org/)
 
-## 持续集成
+## CONTINOUS INTERGRATION
 - [travis-ci](https://travis-ci.org/RainMC/RainLauncher)
 
-## 检查
+## CHECK
 
-## 测试
+## TEST
 - [Junit]()
 
 
