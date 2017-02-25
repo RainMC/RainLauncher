@@ -4,6 +4,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'findbugs'
 
+group = 'com.rainmc'
 version = appVersion
 
 mainClassName = 'com.rainmc.RainLauncher.App'
@@ -29,9 +30,23 @@ sourceCompatibility = jdkVersion
 targetCompatibility = jdkVersion
 
 
+sourceSets {
+    main {
+        resources {
+            srcDirs = ['src/main/java']
+            includes = ['src/main/resources']
+        }
+    }
+}
+
 jar {
     baseName = 'RainLauncher'
     version = appVersion
+//    from('src/main/java') {
+//        include  'src/main/resources'
+//        include  '**/*.xml'
+//        include  '**/*.css'
+//    }
     manifest {
         attributes 'Main-Class': 'com.rainmc.RainLauncher.App'
     }

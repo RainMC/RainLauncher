@@ -1,9 +1,9 @@
-# RainLauncher
+# RainLauncher Slim Edition
 [![Build Status](https://travis-ci.org/RainMC/RainLauncher.svg?branch=master)](https://travis-ci.org/RainMC/RainLauncher)
 
 ## 关于
-An open-source Minecraft launcher crafted by RainMC
-
+An open-source cross-platform Minecraft launcher made by JavaFX
+You can find the Pro edition [here]().
 
 ## 开发工具
 
@@ -11,6 +11,7 @@ An open-source Minecraft launcher crafted by RainMC
 - [JetBrains Intelli IDEA](https://www.jetbrains.com/idea/)
 - [ScenceBuilder](http://gluonhq.com/labs/scene-builder/)
 
+## 下载
 
 ## 编码规范
 
@@ -22,7 +23,7 @@ An open-source Minecraft launcher crafted by RainMC
 ## 检查
 
 ## 测试
+- [Junit]()
 
-## 打包
 
 
